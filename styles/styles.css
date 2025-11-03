@@ -18,6 +18,29 @@
 }
 
 
+
+:root{
+
+  /*  Colors  */
+  --primary-color: #0f0f0f;
+  --secondary-color: #E70000;
+  --white-color: #ffffff;
+  --secondary-white: #FFFAF5;
+  --black-color: #000000;
+  --font-light-grey: #C0BFBF;
+  --font-dark-grey: #7A7A7A;
+
+/*  Font sizes  */
+  --sub-heading-fs: clamp(16px, 3vw, 24px);
+  --anim-para-fs: clamp(24px, 4vw, 50px);
+
+
+/* Padding  */
+  --section-padding: 5.3%;
+  --button-padding: 8px 17px;
+  --form-field-padding: 15px;
+}
+
 /* Box-Sizing for Consistent Layouts */
 
 *, *::before, *::after {
@@ -31,6 +54,7 @@
   background-position: top right;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: var(--primary-color);
 }
 
 
@@ -42,25 +66,52 @@
 }
 
 .logo{
-  width: 60px;
+  width: 50px;
   height:auto;
 
 }
 
-
+/* header container */
 .navbar-expand-lg .navbar-collapse{
   justify-content: flex-end;
+}
+
+
+/* Right navbar container */
+.navbar-nav{
+  gap: 15px;
+}
+
+
+.custom-btn{
+  padding: var(--button-padding)!important;
+  border-radius: 30px;
+  font-weight: 600;
+  border: none;
+}
+
+
+
+
+.nav-link{
+  background-color: var(--secondary-white);
+  color: var(--black-color);
+}
+
+.red-bg-btn{
+  background-color: var(--secondary-color);
+  color: var(--secondary-white);
 }
 
 
 
 @media (min-width: 768px){
   .logo{
-      margin-left: 85px;
+      margin-left: 75px;
   }
 
   .navbar-expand-lg .navbar-collapse{
-    margin-right: 85px;
+    margin-right: 75px;
   }
 
 }
@@ -71,11 +122,24 @@
 
 .hero-section{
   justify-content: space-between;
-  margin-inline: 85px;
 }
+
+
+/* Laptop screen size */
+@media (min-width: 768px) {
+    .hero-section{
+      padding: 4.6rem var(--section-padding);
+    }
+}
+
+
+
+
+
 
 .hero-heading-txt-container{
   max-width: 700px;
+  color: var(--white-color);
 }
 
 
@@ -85,9 +149,19 @@
   font-weight: 900;
 }
 
+.hero-sub-heading{
+  font-size: var(--sub-heading-fs);
+}
 
-.hero-button{
+
+.hero-btn{
   margin-top: 100px;
+}
+
+.hero-form--container{
+  border: 1px solid var(--secondary-white);
+  border-radius: 20px;
+  height: fit-content;
 }
 
 .hero-form{
@@ -96,6 +170,50 @@
   gap: 20px;
 }
 
+.hero-form :is(input, select){
+  background-color: transparent;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 30px;
+  color: var(--white-color);
+  padding-inline: var(--form-field-padding);
+}
+
+.custom-btn.submit-btn{
+  background-color: #C99191;
+  width: fit-content;
+  justify-self: flex-end;
+  border: none;
+  color: var(--secondary-white);
+}
+
+
+/* ||||  Animated Logo scroll section  ||||  */
 
 
 
+.scroll-anim-container{
+  background-color: var(--primary-color);
+  color: var(--font-dark-grey);
+  padding: 5.5%;
+}
+
+
+.scroll-anim__left-container{
+  max-width: 600px;
+}
+
+.scroll-anim__heading{
+  font-size: var(--sub-heading-fs);
+  max-width: 300px;
+  font-style: italic;
+}
+
+
+.anim-section{
+  padding: 5rem var(--section-padding);
+}
+
+.anim__para{
+  font-size: var(--anim-para-fs);
+}
