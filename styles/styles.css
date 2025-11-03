@@ -1,0 +1,101 @@
+/* Universal Reset for Margin and Padding */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@font-face {
+  font-family: 'SF Pro'; /* set name */
+  src: url('../fonts/SFPRODISPLAYREGULAR.woff2'); /* url of the font */
+}
+
+@font-face {
+  font-family: 'SF Pro Bold'; /* set name */
+  src: url('../fonts/SFPRODISPLAYBOLD.woff2'); /* url of the font */
+}
+
+
+/* Box-Sizing for Consistent Layouts */
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+
+.hero-plus-header{
+  background-image: url(../Images/Hero-banner-bg.png);
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+/* |||||  HEADER ||||| */
+
+.bg-body-tertiary{
+  background-color: transparent!important;
+}
+
+.logo{
+  width: 60px;
+  height:auto;
+
+}
+
+
+.navbar-expand-lg .navbar-collapse{
+  justify-content: flex-end;
+}
+
+
+
+@media (min-width: 768px){
+  .logo{
+      margin-left: 85px;
+  }
+
+  .navbar-expand-lg .navbar-collapse{
+    margin-right: 85px;
+  }
+
+}
+
+
+
+/* |||  HERO SECTION  ||| */
+
+.hero-section{
+  justify-content: space-between;
+  margin-inline: 85px;
+}
+
+.hero-heading-txt-container{
+  max-width: 700px;
+}
+
+
+.hero-heading{
+  font-family: 'SF Pro Bold';
+  font-size: clamp(36px, 5vw, 70px);
+  font-weight: 900;
+}
+
+
+.hero-button{
+  margin-top: 100px;
+}
+
+.hero-form{
+  grid-template-columns: repeat(1, 400px);
+  padding: 30px;
+  gap: 20px;
+}
+
+
+
+
