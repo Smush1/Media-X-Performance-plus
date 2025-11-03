@@ -102,7 +102,7 @@
   color: var(--black-color);
 }
 
-.red-bg-btn{
+.btn--red-bg{
   background-color: var(--secondary-color);
   color: var(--secondary-white);
 }
