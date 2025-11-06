@@ -1,8 +1,4 @@
 const dataNumbers = document.querySelectorAll('.data-num');
-
-
-
-
 const dataSection = document.querySelector('.stats-cards-container');
 
 
@@ -11,7 +7,6 @@ const dataSectionCallback = function(enteries){
   console.log(entry);
 
   if(entry.isIntersecting){
-
 
     // update the number 
 dataNumbers.forEach((dataNumber)=>{
@@ -42,10 +37,30 @@ const dataSectionObserver = new IntersectionObserver(dataSectionCallback, {
 dataSectionObserver.observe(dataSection)
 
 
+//// Reveal on scroll
 
+const allSections = document.querySelectorAll('.section');
+//console.log(allSections)
 
+const revealSection = function(entries, observer){
+  entries.forEach((entry)=>{
+    console.log(entry)
+    console.log(observer)
+    if(!entry.isIntersecting)  return;
+      entry.target.classList.remove('section--hidden');
+      observer.unobserve(entry.target)
+ }) 
+}
 
+const sectionObserver = new IntersectionObserver(revealSection,{
+  root: null,
+  threshold: 0.15
+})
 
+allSections.forEach((section)=> {
+  sectionObserver.observe(section);
+  section.classList.add('section--hidden');
+})
 
 
 

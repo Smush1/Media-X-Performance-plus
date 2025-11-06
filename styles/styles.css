@@ -53,6 +53,15 @@
   box-sizing: inherit;
 }
 
+.section{
+  transition: transform 500ms ease-in;
+}
+
+
+.section--hidden{
+  opacity: 0;
+  transform: translateY(8rem);
+}
 
 
 .hero-plus-header{
