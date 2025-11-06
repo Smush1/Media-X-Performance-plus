@@ -1,5 +1,61 @@
-gsap.registerPlugin(ScrollTrigger);
+const dataNumbers = document.querySelectorAll('.data-num');
 
+
+
+
+const dataSection = document.querySelector('.stats-cards-container');
+
+
+const dataSectionCallback = function(enteries){
+  const [entry] = enteries;
+  console.log(entry);
+
+  if(entry.isIntersecting){
+
+
+    // update the number 
+dataNumbers.forEach((dataNumber)=>{
+
+  // Initiating count for each dataNumbers
+let count = 0;
+const num = parseInt(dataNumber.dataset.countNum)
+
+// increase number in each 25ms
+const updateNumber =  setInterval(()=>{
+  count++;
+  dataNumber.textContent = count;
+  if(count === num ){
+    clearInterval(updateNumber)
+  }
+}, 25)
+
+})
+
+  }
+}
+
+const dataSectionObserver = new IntersectionObserver(dataSectionCallback, {
+  root : null,
+  threshold: 0.1
+})
+
+dataSectionObserver.observe(dataSection)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gsap.registerPlugin(ScrollTrigger);
 
   // gsap code here
 
@@ -25,6 +81,8 @@ const animPara= document.querySelector('.anim__para')
     opacity: 0.2,// fade in from opacity: 0 and visibility: hidden
     stagger: 0.1 // 0.05 seconds between each
 });
+
+
 
 
 
