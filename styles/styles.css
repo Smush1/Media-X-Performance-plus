@@ -186,6 +186,7 @@
   border-radius: 30px;
   color: var(--white-color);
   padding-inline: var(--form-field-padding);
+  border:1px solid var(--black-color);
 }
 
 .custom-btn.submit-btn{
@@ -406,7 +407,137 @@
 
 
 .testimonial-section{
+  background-color: var(--primary-color);
   padding: 3rem var(--section-padding);
+  color: var(--secondary-white);
+}
+
+
+
+/* ||||   Let us Talk Section ||||   */
+.let-us-talk-section{
+  padding: 3rem var(--section-padding);
+  gap: 40px;
+}
+
+.lut-left-container{
+  max-width: 830px;
+}
+
+
+
+.lut-left__heading{
+  font-size: var(--heading-fs);
+  font-weight: bold;
+  max-width: 600px;
+}
+
+.lut-left__para{
+  font-size: var(--sub-heading-fs);
+}
+
+
+.lut-left-container > .custom-btn{
+  margin-top: 10%;
+}
+
+
+.lut-form-container{
+  border: 1px solid var(--secondary-white);
+  border-radius: 20px;
+  height: fit-content;
+}
+
+.lut-form{ 
+  grid-template-columns: repeat(1, minmax(250px, 400px));
+  padding: 30px;
+  gap: 20px;
+  background-color: var(--black-color);
+  border-radius: 20px;
+}
+
+
+.lut-form-container :is(input, select){
+  background-color: var(--white-color);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 30px;
+  color: var(--font-dark-grey);
+  padding-inline: var(--form-field-padding);
+  border:1px solid var(--black-color);
+}
+
+
+/* |||||  Footer Section  ||||| */
+.footer-section{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  min-height: 500px;
+  padding: 2rem var(--section-padding);
+}
+
+
+
+.footer-logo{
+  margin-bottom: 20px;
+}
+
+.footer-desc{
+  max-width: 400px;
+}
+
+
+
+
+
+.footer-links-main-container{
+  gap: 40px;
+}
+
+.footer-links{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.links__heading{
+  margin-bottom: 50px;
+}
+
+
+.footer-links li a{
+  text-decoration: none;
+  color: var(--white-color);
+  list-style-position: outside;
+}
+
+.contact-plus-social-link-container{
+  margin-top: 15%;
+}
+
+
+.contact-detail-container{
+  gap: 30px;
+}
+
+
+.social-links-container{
+    grid-template-columns: 1fr;
+}
+
+
+.social-link__list{
+  list-style-type: none;
+  padding-left: 0;
+  gap: 10px;
+}
+
+.footer-divider{
+  background-image: linear-gradient(to right, var(--secondary-color), var(--secondary-white)) ;
+}
+
+.footer-performance-plus-img{
+  width: 100%;
+  height: auto;
 }
 
 

@@ -2,9 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
   // gsap code here
-gsap.to('.anim__para', {
-    ScrollTrigger: 'anim__para'
-})
+
 
 
 
