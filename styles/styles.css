@@ -214,19 +214,62 @@
 .scroll-anim-container{
   background-color: var(--primary-color);
   color: var(--font-dark-grey);
-  padding: 5.5%;
+  padding: 5.5% 0 5.5% 5.5%;
 }
 
 
 .scroll-anim__left-container{
   max-width: 600px;
+  flex-shrink: 0;
 }
+
 
 .scroll-anim__heading{
   font-size: var(--sub-heading-fs);
   max-width: 300px;
   font-style: italic;
 }
+
+.scroll-anim__right-container--wrapper{
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-anim__right-container--wrapper::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28%;
+  height: 100%;
+  background: #0f0f0f;
+  z-index: 9;
+}
+
+
+.scroll-anim__right-container--wrapper::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 28%;
+  width: 28%;
+  height: 100%;
+  background-image: linear-gradient(to right, var(--primary-color),  #0f0f0f00);
+  z-index: 10;
+}
+
+.scroll-anim__right-container{
+  animation: scroll 12s infinite linear;
+  gap: 30px;
+  flex-grow: 1;
+}
+
+
+
+/*   ||||  Animated Para Section  |||| */
+
 
 
 .anim-section{
@@ -307,7 +350,7 @@
 }
 
 .www-anim__logo{
-  width: 200px;
+  width: 150px;
   height: auto;
   flex-shrink: 0;
 }
@@ -421,11 +464,62 @@
   color: var(--secondary-white);
 }
 
+.testimonial--wrapper{
+  overflow-x: scroll ;
+}
+
+.testimonial--wrapper::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+
+
+.test-btn-plus-qoute-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.test-btn-container{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.test-gradient-line{
+  background-image: linear-gradient(to right, var(--secondary-color), var(--secondary-white));
+  border: none;
+  height: 2px;
+}
+
+
+.test-btn{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 30px;
+  padding: 10px 12px;
+  border: 1px solid var(--white-color)
+}
+
+.testimonial-container{ 
+    display: grid;
+    grid-template-columns: repeat(4, 508px);
+    gap: 40px;
+
+}
+
+
+
+.testimonial__txt{
+  font-weight: bold;
+  font-size: var(--sub-heading-fs);
+  margin-top: 20px;
+}
+
+
 
 
 /* ||||   Let us Talk Section ||||   */
 .let-us-talk-section{
-  padding: 3rem var(--section-padding);
+  padding: 5rem var(--section-padding);
   gap: 40px;
 }
 
@@ -541,6 +635,8 @@
 }
 
 .footer-divider{
+  height: 2px;
+  border: none;
   background-image: linear-gradient(to right, var(--secondary-color), var(--secondary-white)) ;
 }
 

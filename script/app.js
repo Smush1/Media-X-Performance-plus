@@ -5,7 +5,7 @@ const dataSection = document.querySelector('.stats-cards-container');
 const dataSectionCallback = function(enteries){
   const [entry] = enteries;
   console.log(entry);
-
+enteries.forEach((entry)=>{
   if(entry.isIntersecting){
 
     // update the number 
@@ -27,6 +27,7 @@ const updateNumber =  setInterval(()=>{
 })
 
   }
+  })
 }
 
 const dataSectionObserver = new IntersectionObserver(dataSectionCallback, {
@@ -58,14 +59,30 @@ const sectionObserver = new IntersectionObserver(revealSection,{
 })
 
 allSections.forEach((section)=> {
-  sectionObserver.observe(section);
   section.classList.add('section--hidden');
+  sectionObserver.observe(section);
 })
 
 
 
+// Testimonial section
+
+const testContainer = document.querySelector('.testimonial--wrapper')
+const testBtns = document.querySelectorAll('.test-btn');
+
+ testBtns.forEach((btn)=>{
+      btn.addEventListener('click', (e)=>{
+        //  console.log(e.target)
+          const btnClasses = e.target.classList;
+       //   console.log(btnClasses)
+          const direction = btnClasses.contains('test-left-btn') ? -1 : 1;
+          const scrollAmount = testContainer.clientWidth * direction;
+          console.log(scrollAmount)
+          testContainer.scrollBy({ left: scrollAmount, behavior: "smooth" })
 
 
+      })
+  })
 
 
 
