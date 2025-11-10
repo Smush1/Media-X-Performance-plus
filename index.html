@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media X- Performance Plus</title>
+
+
+    <link rel="icon" href="./assets/icons/MediaX Performance+ favicon Icon Red.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/icons/MediaX Performance+ favicon Icon Red.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./assets/icons/MediaX Performance+ favicon Icon Red.png">
+
     
     <!--  Bootstrap CSS link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -34,16 +40,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link custom-btn active" aria-current="page" href="#">About</a>
+                    <a class="nav-link custom-btn active" aria-current="page" href="#"><span>About</span></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link custom-btn" href="#">Case Studies</a>
+                    <a class="nav-link custom-btn" href="#"><span>Case Studies</span></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link custom-btn" href="#">Our Process</a>
+                    <a class="nav-link custom-btn" href="#"><span>Our Process</span></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link btn--red-bg custom-btn" aria-disabled="true">Contact us</a>
+                    <a class="nav-link btn--red-bg custom-btn" aria-disabled="true"><span>Contact us</span></a>
                     </li>
                 </ul>
                 </div>
@@ -57,17 +63,23 @@
         <div class="hero-heading-txt-container">
             <h1 class="hero-heading">Performance marketing built for measurable growth</h1>
             <p class="hero-sub-heading">We partner with ambitious brands to scale profitably through creative funnel and media systems</p>
-            <button class="custom-btn btn--red-bg hero-btn">Book a Free Strategy Call</button>
+            <button class="custom-btn btn--red-bg hero-btn"><span>Book a Free Strategy Call</span></button>
         </div>
         <aside class="hero-form--container">
-        <form action="" class="hero-form d-grid">
-            <input type="text" class="hero-form--name" placeholder="Name">
-            <input type="text" class="hero-form--company_name" placeholder="Company Name">
-            <input type="phone" class="hero-form--phone" placeholder="Phone">
-            <input type="email" class="hero-form--email" placeholder="Email">
+        <form action="https://formsubmit.co/sumesh.kumar@mediax.co.in" method="post" class="hero-form d-grid">
+            <input type="text" class="hero-form--name" placeholder="Name" name="Name">
+            <input type="text" class="hero-form--company_name" placeholder="Company Name" name="Company Name">
+            <!--  Custom -->  
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="Performance +">
+            
+            <input type="phone" class="hero-form--phone" placeholder="Phone" name="Phone">
+            <input type="email" class="hero-form--email" placeholder="Email" name="Email">
             <select name="cars" id="cars">
-                <option value="volvo">Monthly Ad spent</option>
-                <option value="saab">10,000</option>
+                <option value="volvo" selected hidden disabled>Monthly Ad spent</option>
+                <option value="10,000">10,000</option>
+                <option value="20,000">20,000</option>
+                <option value="30,000">30,000</option>
             </select>
             <input type="submit" class="custom-btn submit-btn">
         </form>
@@ -118,7 +130,7 @@
         More than ad campaigns. A complete growth system 
 Running ads is only one part of the picture. We look at the entire journey from the first impression to the final sale. By fixing leaks in the funnel, making the message clear and tracking the numbers that matter, we help turn ad spend into business growth.
     </p>
-    <button href="#" class="custom-btn btn--red-bg">Get My Free Audit</button>
+    <button href="#" class="custom-btn btn--red-bg"><span>Get My Free Audit</span></button>
 </section>
 
 
@@ -222,20 +234,21 @@ Running ads is only one part of the picture. We look at the entire journey from 
         </div>
     </div>
     <div class="stats-button-container d-grid justify-content-center align-items-center pt-4">
-        <button class="stats__button btn--red-bg custom-btn">Let’s Talk About Your Goals</button>
+        <button class="stats__button btn--red-bg custom-btn"><span>Let’s Talk About Your Goals</span></button>
     </div>
  </section>
 
 
  <!-- A diffetrent kind of performance agency -->
 <section class="perf-ag-section section">
-    <h2 class="perf-ag-section__heading"> A different kind of performance agency</h2>
+    
 
 
-    <div class="perf-ag-btn-icon-txt-main-container justify-content-between align-items-end d-flex flex-wrap">
+    <div class="perf-ag-btn-icon-txt-main-container justify-content-between  d-flex flex-wrap">
         <!-- Left button container-->
-        <div class="perf-ag-btn-container">
-            <button class="custom-btn btn--red-bg">Book a Free Strategy Call</button>
+        <div class="perf-ag-btn-container d-grid">
+            <h2 class="perf-ag-section__heading"> A different kind of performance agency</h2>
+            <button class="custom-btn btn--red-bg"><span>Book a Free Strategy Call</span></button>
         </div>
 
         <!-- Right Icon with Text Container -->
@@ -313,14 +326,19 @@ Running ads is only one part of the picture. We look at the entire journey from 
             <br>
             We respond within 24 hours. No spam. No obligations.
         </p>
-        <button class="custom-btn btn--red-bg">Get My Free Audit</button>
+        <button class="custom-btn btn--red-bg"><span>Get My Free Audit</span></button>
     </div>
     <aside class="lut-form-container">
-        <form action="" class="lut-form d-grid">
-            <input type="text" class="lut-form--name" placeholder="Name">
-            <input type="text" class="lut-form--company_name" placeholder="Company Name">
-            <input type="phone" class="lut-form--phone" placeholder="Phone">
-            <input type="email" class="lut-form--email" placeholder="Email">
+        <form action="https://formsubmit.co/sumesh.kumar@mediax.co.in" method="post" class="lut-form d-grid">
+            <input type="text" class="lut-form--name" placeholder="Name" name="Name">
+            <input type="text" class="lut-form--company_name" placeholder="Company Name" name="Company Name">
+
+            <!--  Custom -->  
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="Performance +">
+
+            <input type="phone" class="lut-form--phone" placeholder="Phone" name="Phone">
+            <input type="email" class="lut-form--email" placeholder="Email" name="Email">
             <select name="cars" id="cars">
                 <option value="volvo">Monthly Ad spent</option>
                 <option value="saab">10,000</option>
