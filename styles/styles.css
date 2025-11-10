@@ -718,6 +718,11 @@
   gap: 10px;
 }
 
+.footer__phone a, .footer__email a{
+  text-decoration: none;
+  color: var(--white-color);
+}
+
 .footer-divider{
   height: 2px;
   border: none;
@@ -768,7 +773,6 @@ select {
 }
 select {
   border: 2px solid var(--white-color);
-  background: var(--primary-color);
   padding: 10px;
   transition: 0.4s;
 }
@@ -777,6 +781,13 @@ select:hover,
 select:focus {
   background: transparent;
 }
+
+.lut-form-container select:hover,
+select:focus{
+  background-color: var(--white-color);
+}
+
+
 select::picker-icon {
   color: var(--secondary-color);
   transition: 0.4s rotate;
