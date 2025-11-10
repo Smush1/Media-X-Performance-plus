@@ -868,9 +868,7 @@ option::checkmark {
   display: flex;
   font-weight: 600;
   overflow: hidden;
-
   color: black;
-  cursor: pointer;
 
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
 
