@@ -775,7 +775,7 @@ select {
 
 select:hover,
 select:focus {
-  background: var(--black-color);
+  background: transparent;
 }
 select::picker-icon {
   color: var(--secondary-color);
