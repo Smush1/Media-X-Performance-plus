@@ -59,6 +59,9 @@
 
     <!-- HERO SECTION -->
 
+
+
+
     <section class="hero-section d-flex flex-wrap mx-md-3">
         <div class="hero-heading-txt-container">
             <h1 class="hero-heading">Performance marketing built for measurable growth</h1>
@@ -66,7 +69,15 @@
             <button class="custom-btn btn--red-bg hero-btn"><span>Book a Free Strategy Call</span></button>
         </div>
         <aside class="hero-form--container">
-        <form action="https://formsubmit.co/yash@mediax.co.in" method="post" class="hero-form d-grid">
+
+        <div class="liquidGlass-wrapper menu">
+        <div class="liquidGlass-effect"></div>
+        <div class="liquidGlass-tint"></div>
+        <div class="liquidGlass-shine"></div>
+        <div class="liquidGlass-text">
+
+
+        <form action="https://formsubmit.co/yash@mediax.co.in" method="post" class="hero-form d-grid  liquidGlass-text">
             <input type="text" class="hero-form--name" placeholder="Name" name="Name">
             <input type="text" class="hero-form--company_name" placeholder="Company Name" name="Company Name">
             <!--  Custom -->  
@@ -83,7 +94,68 @@
                 <option value="30,000">30,000</option>
             </select>
             <input type="submit" class="custom-btn submit-btn">
+
+
+            <svg style="display: none">
+                                <filter
+                                    id="glass-distortion"
+                                    x="0%"
+                                    y="0%"
+                                    width="100%"
+                                    height="100%"
+                                    filterUnits="objectBoundingBox"
+                                >
+                                    <feTurbulence
+                                    type="fractalNoise"
+                                    baseFrequency="0.01 0.01"
+                                    numOctaves="1"
+                                    seed="1"
+                                    result="turbulence"
+                                    />
+                                    <!-- Seeds: 14, 17,  -->
+
+                                    <feComponentTransfer in="turbulence" result="mapped">
+                                    <feFuncR type="gamma" amplitude="1" exponent="10" offset="0.5" />
+                                    <feFuncG type="gamma" amplitude="0" exponent="1" offset="0" />
+                                    <feFuncB type="gamma" amplitude="0" exponent="1" offset="0.5" />
+                                    </feComponentTransfer>
+
+                                    <feGaussianBlur in="turbulence" stdDeviation="3" result="softMap" />
+
+                                    <feSpecularLighting
+                                    in="softMap"
+                                    surfaceScale="5"
+                                    specularConstant="1"
+                                    specularExponent="100"
+                                    lighting-color="white"
+                                    result="specLight"
+                                    >
+                                    <fePointLight x="-200" y="-200" z="300" />
+                                    </feSpecularLighting>
+
+                                    <feComposite
+                                    in="specLight"
+                                    operator="arithmetic"
+                                    k1="0"
+                                    k2="1"
+                                    k3="1"
+                                    k4="0"
+                                    result="litImage"
+                                    />
+
+                                    <feDisplacementMap
+                                    in="SourceGraphic"
+                                    in2="softMap"
+                                    scale="150"
+                                    xChannelSelector="R"
+                                    yChannelSelector="G"
+                                    />
+                                </filter>
+                                </svg>
         </form>
+        </div>
+        </div>
+
         </aside>
     </section>
 </header>
@@ -400,6 +472,8 @@ Running ads is only one part of the picture. We look at the entire journey from 
 
     <img src="./assets/images/MediaX Performance+ Logo 2 White 1.png" class="footer-performance-plus-img">
 </footer>
+
+
 
 
 
