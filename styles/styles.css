@@ -784,7 +784,7 @@ select:focus {
 
 .lut-form-container select:hover,
 select:focus{
-  background-color: var(--white-color);
+  background-color: transparent;
 }
 
 
