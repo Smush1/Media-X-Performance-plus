@@ -219,6 +219,14 @@
   .navbar-expand-lg .navbar-collapse{
   margin-right: 75px;
   }
+
+  .btn--mob{
+    display: none;
+  }
+
+  .btn--desk{
+    display: block;
+  }
 }
 
 
@@ -616,7 +624,7 @@
 }
 
 .lut-left-container{
-  max-width: 830px;
+  max-width: 750px;
 }
 
 
@@ -766,6 +774,14 @@
 
   .scroll-anim-container{
     flex-wrap: wrap;
+  }
+
+    .btn--mob{
+    display: block;
+  }
+
+  .btn--desk{
+    display: none;
   }
 }
 
