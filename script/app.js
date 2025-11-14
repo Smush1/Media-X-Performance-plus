@@ -1,5 +1,42 @@
+// Custom Side Drawer Menu Handler
+(function(){
+  const drawerToggle = document.getElementById('drawerToggle');
+  const drawerClose = document.getElementById('drawerClose');
+  const customDrawer = document.getElementById('customDrawer');
+  const drawerBackdrop = document.getElementById('drawerBackdrop');
+  const drawerLinks = document.querySelectorAll('.drawer-link');
+
+  if (!drawerToggle || !drawerClose || !customDrawer || !drawerBackdrop) return;
+
+  // Open drawer
+  drawerToggle.addEventListener('click', () => {
+    customDrawer.classList.add('active');
+    drawerBackdrop.classList.add('active');
+    document.body.style.overflow = 'hidden'; // prevent body scroll
+  });
+
+  // Close drawer
+  const closeDrawer = () => {
+    customDrawer.classList.remove('active');
+    drawerBackdrop.classList.remove('active');
+    document.body.style.overflow = ''; // restore scroll
+  };
+
+  drawerClose.addEventListener('click', closeDrawer);
+  drawerBackdrop.addEventListener('click', closeDrawer);
+
+  // Close drawer when a link is clicked
+  drawerLinks.forEach(link => {
+    link.addEventListener('click', closeDrawer);
+  });
+})();
+
+
 const dataNumbers = document.querySelectorAll('.data-num');
 const dataSection = document.querySelector('.stats-cards-container');
+
+
+
 
 
 const dataSectionCallback = function(enteries){
@@ -66,6 +103,8 @@ allSections.forEach((section)=> {
 
 
 // Testimonial section
+
+
 
 const testContainer = document.querySelector('.testimonial--wrapper')
 const testBtns = document.querySelectorAll('.test-btn');
