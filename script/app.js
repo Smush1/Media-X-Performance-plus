@@ -50,16 +50,28 @@ dataNumbers.forEach((dataNumber)=>{
 
   // Initiating count for each dataNumbers
 let count = 0;
-const num = parseInt(dataNumber.dataset.countNum)
+const num = parseFloat(dataNumber.dataset.countNum)
+
+
+  // Choose step based on the number type
+  const isFloat = !Number.isInteger(num);
+  const step = isFloat ? 0.01 : 1;   // increment for float or int
+  let time = isFloat ? 0.01 : 50
+
+console.log(dataNumber)
 
 // increase number in each 25ms
 const updateNumber =  setInterval(()=>{
-  count++;
-  dataNumber.textContent = count;
-  if(count === num ){
+  
+  
+  count += step;
+
+  dataNumber.textContent = isFloat ? count.toFixed(2) : Math.floor(count);
+
+  if(count >= num ){
     clearInterval(updateNumber)
   }
-}, 25)
+}, time)
 
 })
 

@@ -36,6 +36,24 @@
                 <a class="navbar-brand" href="#">
                     <img src="./assets/logos/MediaX-PerformancePlus-Logo.png" alt="Logo" class="logo">
                 </a>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="custom-btn btn" aria-current="page" href="#about-section"><span>About Us</span></a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="custom-btn btn" aria-current="page" href="#industries-section"><span>Industries</span></a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="custom-btn btn" aria-current="page" href="#case-studies-section"><span>Case Studies</span></a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="custom-btn btn btn--red-bg" aria-current="page" href="#contact-us-section"><span>Contact</span></a>
+                            </li>
+                        </ul>
+                        </div>
+
                 <button class="navbar-toggler custom-drawer-btn" id="drawerToggle" type="button" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -49,7 +67,7 @@
                 <li><a class="drawer-link" href="#about-section"><span>About</span></a></li>
                 <li><a class="drawer-link" href="#industries-section"><span>Industries</span></a></li>
                 <li><a class="drawer-link" href="#case-studies-section"><span>Case Studies</span></a></li>
-                <li><a class="drawer-link btn--red-bg custom-btn" href="#contact-us-section"><span>Contact us</span></a></li>
+                <li><a class=" btn--red-bg custom-btn btn" href="#contact-us-section"><span>Contact us</span></a></li>
             </ul>
         </div>
         <!-- Drawer Overlay/Backdrop -->
@@ -83,6 +101,8 @@
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_subject" value="Performance +">
             <input type="hidden" name="_cc" value="vanshika@mediax.co.in">
+            <input type="hidden" name="_cc" value="sumesh.kumar@mediax.co.in">
+            <input type="hidden" name="_captcha" value="false">
             
             <input type="phone" class="hero-form--phone" placeholder="Phone" name="Phone">
             <input type="email" class="hero-form--email" placeholder="Email" name="Email">
@@ -94,7 +114,7 @@
                 <option value="30,000">10L+</option>
             </select>
 
-            <input type="submit" class="custom-btn submit-btn">
+            <button type="submit" class="custom-btn submit-btn btn--red-bg"> <span>Submit</span></button>
 
 
             <svg style="display: none">
@@ -199,13 +219,40 @@
 
 <!-- Animation para -->
 
-<section class="anim-section section" id="about-section">
+<!-- <section class="anim-section section" id="about-section">
     <p class="anim__para fw-bold">
         More than ad campaigns. A complete growth system 
 Running ads is only one part of the picture. We look at the entire journey from the first impression to the final sale. By fixing leaks in the funnel, making the message clear and tracking the numbers that matter, we help turn ad spend into business growth.
     </p>
     <button href="#" class="custom-btn btn--red-bg"><span>Talk to Our Team
 </span></button>
+</section> -->
+
+
+<!-- More than Ad section  -->
+<section class="mtac-section section">
+    <h2 class="mtac-section__heading">More Than Ad Campaigns. A Full Growth System.</h2>
+    <p class="mtac-section__sub-heading">Running ads is only one part of the picture. We design and manage your entire customer acquisition engine — from first impression to final sale</p>
+    
+
+    <div class="mtac-cards-container d-flex justify-content-between">
+        <div class="mtac-container">
+            <div class="mtac__upper-txt-container">Fix leaks in your funnel so paid traffic converts.</div>
+            <div class="mtac__lower-txt-container">stats</div>
+        </div>
+        <div class="mtac-container">
+            <div class="mtac__upper-txt-container">Clarify your messaging so your audience understands the value instantly.</div>
+            <div class="mtac__lower-txt-container">stats</div>
+        </div>
+        <div class="mtac-container">
+            <div class="mtac__upper-txt-container">Track the numbers that matter — CAC, ROAS, LTV, not vanity metrics.</div>
+            <div class="mtac__lower-txt-container">stats</div>
+        </div>
+        <div class="mtac-container">
+            <div class="mtac__upper-txt-container">Build creative and audience systems that improve results over time.</div>
+            <div class="mtac__lower-txt-container">stats</div>
+        </div>
+    </div>
 </section>
 
 
@@ -213,47 +260,47 @@ Running ads is only one part of the picture. We look at the entire journey from 
  <section class="www-main-section section" id="industries-section">
     <div class="www-heading-txt-container">
         <h2 class="www__heading fw-bolder">Trusted by growth focused brands</h2>
-        <p class="www__sub-heading">From challenger companies to established enterprises we partner with brands that are serious about scaling</p>
+        <p class="www__sub-heading">Partnering with growth-focused brands across healthcare, education, lifestyle, and real estate.</p>
     </div>
     <!-- WWWW - Industry Cards container -->
-    <div class="www-cards-container d-flex justify-content-space-between flex-wrap">
+    <div class="www-cards-container <!-- d-flex --> justify-content-space-between <!-- flex-wrap  -->row">
         <!-- WWWW - Single Card container -->
-        <div class="www-single-container__border">
+        <div class="www-single-container__border col-lg-5">
             <div class="www-single-container">
                 <img src="./assets/icons/healthcare-icon.svg">
                 <h3 class="h4">Healthcare</h3>
                 <hr>
-                <p>Including clinics, hospitals, IVF centres and labs.</p>
+                <p>Clinics, hospitals, IVF centres and labs focused on predictable patient acquisition.</p>
             </div>
         </div>
-        <div class="www-single-container__border">
+        <div class="www-single-container__border col-lg-5">
             <div class="www-single-container">
                 <img src="./assets/icons/book-icon.svg">
                 <h3 class="h4">Education</h3>
                 <hr>
-                <p>Including universities and training institutions.</p>
+                <p>Universities and training institutions building consistent, qualified admission pipelines.</p>
             </div>
         </div> 
-        <div class="www-single-container__border"> 
+        <div class="www-single-container__border col-lg-5"> 
             <div class="www-single-container">
                 <img src="./assets/icons/fashion-lifestyle-icon.svg">
                 <h3 class="h4">Fashion and lifestyle</h3>
                 <hr>
-                <p>Fashion and Lifestyle brands looking to scale online</p>
+                <p>D2C fashion and lifestyle brands growing revenue profitably through paid media.</p>
             </div>
         </div> 
-        <div class="www-single-container__border"> 
+        <div class="www-single-container__border col-lg-5"> 
             <div class="www-single-container">
                 <img src="./assets/icons/real-estate-icon.svg">
                 <h3 class="h4">Real estate</h3>
                 <hr>
-                <p>Including developers and property marketers</p>
+                <p>Developers and property marketers improving lead quality and site-visit conversion.</p>
             </div>
         </div>
     </div>
 
     <!-- www scrolling logos left or right -->
-    <div class="www-anim-logos-container--wrapper">
+   <!--  <div class="www-anim-logos-container--wrapper">
     <div class="www-anim-logos-container d-flex">
         <img src="./assets/logos/gaupalam-vedic-logo.svg" class="www-anim__logo" alt="">
         <img src="./assets/logos/Indusmela-logo.svg" class="www-anim__logo" alt="">
@@ -279,37 +326,39 @@ Running ads is only one part of the picture. We look at the entire journey from 
         <img src="./assets/logos/Swaraj-india-logo.svg" class="www-anim__logo" alt="">
         <img src="./assets/logos/crimson-logo.svg" class="www-anim__logo" alt="">
     </div>
-    </div>
+    </div> -->
  </section>
 
 
  <!-- What this looks like in practice Section-->
  <section class="stats-section section" id="case-studies-section">
     <h2 class="stats-section__heading">Real results that prove impact</h2>
+    <p class="stats-section__sub-heading" >Results powered by full-funnel systems, creative testing, and performance measurement.</p>
     <div class="stats-cards-container d-flex flex-wrap justify-content-between pt-2">
         <div class="single-stats-card">
             <h3 class="single-stats-card__heading">Patients</h3>
             <p class="single-stats-card__data">+<span class="data-num" data-count-num="140">140</span>%</p>
-            <p class="single-stats-card__desc">increase in patient volume achieved without higher spend.</p>
+            <p class="single-stats-card__desc"> Increase in patient volume achieved without increasing ad spend.</p>
         </div>
         <div class="single-stats-card">
             <h3 class="single-stats-card__heading">Enrollments</h3>
-            <p class="single-stats-card__data"><span class="data-num" data-count-num="2">2</span>×</p>
-            <p class="single-stats-card__desc">Our approach enabled a university to double BEd enrollments in just two months.</p>
+            <p class="single-stats-card__data"><span class="data-num" data-count-num="9.27">9.27</span>×</p>
+            <p class="single-stats-card__desc">Return on ad spend for a first-time online school admission campaign.</p>
         </div>
         <div class="single-stats-card">
             <h3 class="single-stats-card__heading">Ad Spend Returns</h3>
-            <p class="single-stats-card__data"><span class="data-num" data-count-num="3">3</span>×</p>
-            <p class="single-stats-card__desc">times return on ad spend scaled a D2C brand in one quarter.</p>
+            <p class="single-stats-card__data"><span class="data-num" data-count-num="4.49">4.4</span>×</p>
+            <p class="single-stats-card__desc"> Return on ad spend for a D2C brand within one quarter.</p>
         </div>
         <div class="single-stats-card">
             <h3 class="single-stats-card__heading">Leads</h3>
-            <p class="single-stats-card__data">+<span class="data-num" data-count-num="40">40</span>%</p>
-            <p class="single-stats-card__desc">more qualified leads generated for a real estate group.</p>
+            <p class="single-stats-card__data">+<span class="data-num" data-count-num="77">77</span>%</p>
+            <p class="single-stats-card__desc">SQL generated for a real estate project.</p>
         </div>
     </div>
-    <div class="stats-button-container d-grid justify-content-center align-items-center pt-4">
-        <button class="stats__button btn--red-bg custom-btn"><span>Let’s Talk About Your Goals</span></button>
+    <div class="stats-button-container d-grid justify-content-center align-items-center pt-4 m-auto justify-items-center">
+        <p> Not sure what’s realistic for your brand? Let’s review your growth opportunities together.</p>
+        <button class="stats__button btn--red-bg custom-btn"><span>Book a Strategy Call</span></button>
     </div>
  </section>
 
@@ -319,10 +368,11 @@ Running ads is only one part of the picture. We look at the entire journey from 
     
 
 
-    <div class="perf-ag-btn-icon-txt-main-container justify-content-between  d-flex flex-wrap">
+    <div class="perf-ag-btn-icon-txt-main-container justify-content-between  d-flex flex-wrap align-items-start">
         <!-- Left button container-->
         <div class="perf-ag-btn-container d-grid">
-            <h2 class="perf-ag-section__heading">Your performance partner not just an agency</h2>
+            <h2 class="perf-ag-section__heading">Your performance partner, not just another agency</h2>
+            <p class="perf-ag__sunheading">Performance systems, not isolated ad campaigns.</p>
             <button class="custom-btn btn--red-bg btn--desk"><span>Book a Strategy Call</span></button>
         </div>
 
@@ -331,15 +381,15 @@ Running ads is only one part of the picture. We look at the entire journey from 
             <div class="perf-ag-icon-txt-container">
                 <!--  Performance Agency Section Highlighted Icon and text -->
                 <img src="./assets/icons/ROI-icon.svg" alt="">
-                <p class="perf-ag__txt"><span class="perf-ag__txt--highlight">ROI</span> comes first, not vanity metrics.</p>
+                <p class="perf-ag__txt"><span class="perf-ag__txt--highlight">ROI-first</span> approach focused on revenue, not vanity metrics</p>
             </div>
             <div class="perf-ag-icon-txt-container">
                 <img src="./assets/icons/Setting-man-icon.svg" alt="">
-                <p class="perf-ag__txt"><span class="perf-ag__txt--highlight">Deep expertise</span> in healthcare, education, lifestyle and real estate.</p>
+                <p class="perf-ag__txt"><span class="perf-ag__txt--highlight">Full-funnel strategy</span>  covering offer, creative, audiences, tracking, and nurturing.</p>
             </div>
             <div class="perf-ag-icon-txt-container">
                 <img src="./assets/icons/hand-shake-icon.svg" alt="">
-                <p class="perf-ag__txt">We work as <span class="perf-ag__txt--highlight">partners</span>, not vendors</p>
+                <p class="perf-ag__txt"><span class="perf-ag__txt--highlight">Partner mindset</span> — we work as an extension of your team, not a vendor</p>
             </div>
             <div class="perf-ag-icon-txt-container">
                     <img src="./assets/icons/network-icon.svg" alt="">
@@ -357,10 +407,10 @@ Running ads is only one part of the picture. We look at the entire journey from 
 
 <!--   Testimonial Section -->
     <section class="testimonial-section section">
-        <h2 class="test__heading">What our partners say</h2>
+        <h2 class="test__heading">What our partners achieved working with us</h2>
         <div class="test-btn-plus-qoute-container">
             <img src="./assets/icons/double-qoute-icon.svg" alt="">
-            <div class="test-btn-container">
+            <div class="test-btn-container d-lg-none">
                 <button class="test-left-btn test-btn"><i class="fa-solid fa-arrow-left test-left-btn"></i></button>
                 <button class="test-right-btn test-btn"><i class="fa-solid fa-arrow-right test-right-btn"></i></button>
             </div>
@@ -409,7 +459,8 @@ Running ads is only one part of the picture. We look at the entire journey from 
 <section class="let-us-talk-section d-flex flex-wrap justify-content-between section" id="contact-us-section">
     <div class="lut-left-container ">
         <h2 class="lut-left__heading">Ready to scale with confidence</h2>
-        <p class="lut-left__para">Book a strategy session with our team and see how we can help you grow profitably.
+        <p class="lut-left__para">Book a strategy session with our team. We’ll review your funnel, creative, and performance data, and share the first opportunities to improve CAC, ROAS, and revenue.
+
             <br>
             <br>
             We respond within 24 hours. No spam. No obligations.
@@ -425,6 +476,8 @@ Running ads is only one part of the picture. We look at the entire journey from 
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_subject" value="Performance +">
             <input type="hidden" name="_cc" value="vanshika@mediax.co.in">
+            <input type="hidden" name="_cc" value="sumesh.kumar@mediax.co.in">
+            <input type="hidden" name="_captcha" value="false">
 
             <input type="phone" class="lut-form--phone" placeholder="Phone" name="Phone">
             <input type="email" class="lut-form--email" placeholder="Email" name="Email">
@@ -435,7 +488,7 @@ Running ads is only one part of the picture. We look at the entire journey from 
                 <option value="30,000">5L-10L</option>
                 <option value="30,000">10L+</option>
             </select>
-            <input type="submit" class="custom-btn submit-btn">
+            <button type="submit" class="custom-btn submit-btn btn--red-bg"> <span>Submit</span></button>
         </form>
     </aside>
 </section>
