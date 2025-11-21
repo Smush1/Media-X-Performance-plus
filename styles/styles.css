@@ -1036,6 +1036,7 @@
     flex-wrap: wrap;
   }
 
+  
     .btn--mob{
     display: block;
   }
@@ -1043,6 +1044,13 @@
   .btn--desk{
     display: none;
   }
+
+
+.mtac-container{
+  flex-basis: 100%;
+}
+
+
 
   .testimonial--wrapper{
     scroll-snap-type: x mandatory;
