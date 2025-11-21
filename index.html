@@ -82,8 +82,8 @@
     <section class="hero-section d-flex flex-wrap mx-md-3">
         <div class="hero-heading-txt-container">
             <h1 class="hero-heading">Performance marketing built for measurable growth</h1>
-            <p class="hero-sub-heading">We partner with ambitious brands to scale profitably through creative funnel and media systems</p>
-            <button class="custom-btn btn--red-bg hero-btn"><span>Book a Strategy Call</span></button>
+            <p class="hero-sub-heading">We help brands launch and scale revenue through full-funnel Meta and Google campaigns, creative testing, and measurement systems.</p>
+            <button class="custom-btn btn--red-bg hero-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" ><span>Book a Strategy Call</span></button>
         </div>
         <aside class="hero-form--container">
 
@@ -102,7 +102,7 @@
             <input type="hidden" name="_subject" value="Performance +">
             <input type="hidden" name="_cc" value="vanshika@mediax.co.in">
             <input type="hidden" name="_cc" value="sumesh.kumar@mediax.co.in">
-            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_captcha" value="true">
             
             <input type="phone" class="hero-form--phone" placeholder="Phone" name="Phone">
             <input type="email" class="hero-form--email" placeholder="Email" name="Email">
@@ -189,7 +189,8 @@
     </div>
     <div class="scroll-anim__right-container--wrapper">
         <div class="scroll-anim__right-container d-flex">
-                    <img src="./assets/logos/gaupalam-vedic-logo.svg" class="www-anim__logo" alt="">
+        
+        <img src="./assets/logos/gaupalam-vedic-logo.svg" class="www-anim__logo" alt="">
         <img src="./assets/logos/Indusmela-logo.svg" class="www-anim__logo" alt="">
         <img src="./assets/logos/meaty-story-logo.svg" class="www-anim__logo" alt="">
         <img src="./assets/logos/Swaraj-india-logo.svg" class="www-anim__logo" alt="">
@@ -199,7 +200,7 @@
         <img src="./assets/logos/Indusmela-logo.svg" class="www-anim__logo" alt="">
         <img src="./assets/logos/meaty-story-logo.svg" class="www-anim__logo" alt="">
         <img src="./assets/logos/Swaraj-india-logo.svg" class="www-anim__logo" alt="">
-          <img src="./assets/logos/crimson-logo.svg" class="www-anim__logo" alt="">
+        <img src="./assets/logos/crimson-logo.svg" class="www-anim__logo" alt="">
 
         <img src="./assets/logos/gaupalam-vedic-logo.svg" class="www-anim__logo" alt="">
         <img src="./assets/logos/Indusmela-logo.svg" class="www-anim__logo" alt="">
@@ -215,6 +216,49 @@
         </div>
     </div>
 </section>
+
+
+
+<!-- ||||||    MODAL FORM  ||||||| -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div  class="modal-header">
+    <!--     <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    <div class="modal-content">
+            <form action="https://formsubmit.co/sumesh.kumar@mediax.co.in" method="post" class="modal-form d-grid">
+            <input type="text" class="lut-form--name" placeholder="Name" name="Name">
+            <input type="text" class="lut-form--company_name" placeholder="Company Name" name="Company Name">
+
+            <!--  Custom -->  
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="Performance +">
+            <input type="hidden" name="_cc" value="vanshika@mediax.co.in">
+            <input type="hidden" name="_cc" value="sumesh.kumar@mediax.co.in">
+            <input type="hidden" name="_captcha" value="true">
+
+            <input type="phone" class="lut-form--phone" placeholder="Phone" name="Phone">
+            <input type="email" class="lut-form--email" placeholder="Email" name="Email">
+             <select name="Monthly Ad Spend" id="Monthly Ad Spend">
+                <option value="volvo" selected hidden disabled>Monthly Ad Spend</option>
+                <option value="10,000">2L</option>
+                <option value="20,000">2L-5L</option>
+                <option value="30,000">5L-10L</option>
+                <option value="30,000">10L+</option>
+            </select>
+            <button type="submit" class="custom-btn submit-btn btn--red-bg"> <span>Submit</span></button>
+        </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
 
 <!-- Animation para -->
@@ -237,20 +281,20 @@ Running ads is only one part of the picture. We look at the entire journey from 
 
     <div class="mtac-cards-container d-flex justify-content-between">
         <div class="mtac-container">
-            <div class="mtac__upper-txt-container">Fix leaks in your funnel so paid traffic converts.</div>
-            <div class="mtac__lower-txt-container">stats</div>
+            <div class="mtac__upper-txt-container"><h4>Fix leaks in your funnel so paid traffic converts.</h4></div>
+            <div class="mtac__lower-txt-container"><span class="mtac_num">22%</span> improvement in add-to-cart → purchase rate</div>
         </div>
         <div class="mtac-container">
-            <div class="mtac__upper-txt-container">Clarify your messaging so your audience understands the value instantly.</div>
-            <div class="mtac__lower-txt-container">stats</div>
+            <div class="mtac__upper-txt-container"><h4>Clarify your messaging so your audience understands the value instantly.</h4></div>
+            <div class="mtac__lower-txt-container">Average <span class="mtac_num">18%</span> lift in CTR after rewriting ad messaging</div>
         </div>
         <div class="mtac-container">
-            <div class="mtac__upper-txt-container">Track the numbers that matter — CAC, ROAS, LTV, not vanity metrics.</div>
-            <div class="mtac__lower-txt-container">stats</div>
+            <div class="mtac__upper-txt-container"><h4>Track the numbers that matter — CAC, ROAS, LTV, not vanity metrics.</h4></div>
+            <div class="mtac__lower-txt-container">Up to <span class="mtac_num">38%</span> lower CAC through structured testing</div>
         </div>
         <div class="mtac-container">
-            <div class="mtac__upper-txt-container">Build creative and audience systems that improve results over time.</div>
-            <div class="mtac__lower-txt-container">stats</div>
+            <div class="mtac__upper-txt-container"><h4>Build creative and audience systems that improve results over time.</h4></div>
+            <div class="mtac__lower-txt-container"><span class="mtac_num">60%</span> more efficient audience testing cycles</div>
         </div>
     </div>
 </section>
@@ -263,7 +307,7 @@ Running ads is only one part of the picture. We look at the entire journey from 
         <p class="www__sub-heading">Partnering with growth-focused brands across healthcare, education, lifestyle, and real estate.</p>
     </div>
     <!-- WWWW - Industry Cards container -->
-    <div class="www-cards-container <!-- d-flex --> justify-content-space-between <!-- flex-wrap  -->row">
+    <div class="www-cards-container justify-content-space-between row g-0">
         <!-- WWWW - Single Card container -->
         <div class="www-single-container__border col-lg-5">
             <div class="www-single-container">
@@ -358,7 +402,7 @@ Running ads is only one part of the picture. We look at the entire journey from 
     </div>
     <div class="stats-button-container d-grid justify-content-center align-items-center pt-4 m-auto justify-items-center">
         <p> Not sure what’s realistic for your brand? Let’s review your growth opportunities together.</p>
-        <button class="stats__button btn--red-bg custom-btn"><span>Book a Strategy Call</span></button>
+        <button class="stats__button btn--red-bg custom-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" ><span>Book a Strategy Call</span></button>
     </div>
  </section>
 
@@ -373,7 +417,7 @@ Running ads is only one part of the picture. We look at the entire journey from 
         <div class="perf-ag-btn-container d-grid">
             <h2 class="perf-ag-section__heading">Your performance partner, not just another agency</h2>
             <p class="perf-ag__sunheading">Performance systems, not isolated ad campaigns.</p>
-            <button class="custom-btn btn--red-bg btn--desk"><span>Book a Strategy Call</span></button>
+            <button class="custom-btn btn--red-bg btn--desk" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>Book a Strategy Call</span></button>
         </div>
 
         <!-- Right Icon with Text Container -->
@@ -381,7 +425,7 @@ Running ads is only one part of the picture. We look at the entire journey from 
             <div class="perf-ag-icon-txt-container">
                 <!--  Performance Agency Section Highlighted Icon and text -->
                 <img src="./assets/icons/ROI-icon.svg" alt="">
-                <p class="perf-ag__txt"><span class="perf-ag__txt--highlight">ROI-first</span> approach focused on revenue, not vanity metrics</p>
+                <p class="perf-ag__txt"><span class="perf-ag__txt--highlight">ROI-first</span> approach focused on revenue, not vanity metrics.</p>
             </div>
             <div class="perf-ag-icon-txt-container">
                 <img src="./assets/icons/Setting-man-icon.svg" alt="">
@@ -389,16 +433,16 @@ Running ads is only one part of the picture. We look at the entire journey from 
             </div>
             <div class="perf-ag-icon-txt-container">
                 <img src="./assets/icons/hand-shake-icon.svg" alt="">
-                <p class="perf-ag__txt"><span class="perf-ag__txt--highlight">Partner mindset</span> — we work as an extension of your team, not a vendor</p>
+                <p class="perf-ag__txt"><span class="perf-ag__txt--highlight">Partner mindset</span> — we work as an extension of your team, not a vendor.</p>
             </div>
             <div class="perf-ag-icon-txt-container">
                     <img src="./assets/icons/network-icon.svg" alt="">
-                <p class="perf-ag__txt"> Backed by the wider <span class="perf-ag__txt--highlight">MediaX network</span> in creative, media and tech</p>
+                <p class="perf-ag__txt"> Backed by the wider <span class="perf-ag__txt--highlight">MediaX network</span> in creative, media and tech.</p>
             </div>
 
             
         </div>
-         <button class="custom-btn btn--red-bg btn--mob"><span>Book a Strategy Call</span></button>
+         <button class="custom-btn btn--red-bg btn--mob" data-bs-toggle="modal" data-bs-target="#exampleModal"  ><span>Book a Strategy Call</span></button>
 
 
     </div>
@@ -410,7 +454,7 @@ Running ads is only one part of the picture. We look at the entire journey from 
         <h2 class="test__heading">What our partners achieved working with us</h2>
         <div class="test-btn-plus-qoute-container">
             <img src="./assets/icons/double-qoute-icon.svg" alt="">
-            <div class="test-btn-container d-lg-none">
+            <div class="test-btn-container">
                 <button class="test-left-btn test-btn"><i class="fa-solid fa-arrow-left test-left-btn"></i></button>
                 <button class="test-right-btn test-btn"><i class="fa-solid fa-arrow-right test-right-btn"></i></button>
             </div>
@@ -434,6 +478,11 @@ Running ads is only one part of the picture. We look at the entire journey from 
                     <p class="testimonial__author">- Hitanshu Balu</p>
                 </div>
                 <div class="single-testimonial">
+                    <img src="./assets/images/rhea-chandra.png"  alt="">
+                    <p class="testimonial__txt">Working with this team has been an absolute pleasure. They bring genuine passion to every campaign, understand the brief quickly and intuitively, and are incredibly responsive throughout. What I appreciate most is how they’re always on top of the ball — proactive, detail-oriented, and consistently delivering with clarity and commitment. Grateful to have them as our performance marketing partners.</p>
+                    <p class="testimonial__author">- Rhea Chandra</p>
+                </div>
+<!--                 <div class="single-testimonial">
                     <img src="./assets/images/Pankhuri.png" alt="">
                     <p class="testimonial__txt">Been a good working relationship. Communication systems are strong as a team. It's nice to see that they follow a good tiered approach for account management. Our quality has evolved over a few months, the team has incorporated feedback well and helped us build more streamlined system for a cleaner delivery.</p>
                     <p class="testimonial__author"> - Pankhuri kanwar</p>
@@ -448,6 +497,11 @@ Running ads is only one part of the picture. We look at the entire journey from 
                     <p class="testimonial__txt">MediaX is an excellent creative growth agency that has helped me achieve amazing results. Their approach is unique, and they always go above and beyond to ensure that their clients are happy..</p>
                     <p class="testimonial__author">- Hitanshu Balu</p>
                 </div>
+                 <div class="single-testimonial">
+                    <img src="./assets/images/rhea-chandra.png"  alt="">
+                    <p class="testimonial__txt">Working with this team has been an absolute pleasure. They bring genuine passion to every campaign, understand the brief quickly and intuitively, and are incredibly responsive throughout. What I appreciate most is how they’re always on top of the ball — proactive, detail-oriented, and consistently delivering with clarity and commitment. Grateful to have them as our performance marketing partners.</p>
+                    <p class="testimonial__author">- Rhea Chandra</p>
+                </div> -->
             </div>
         </div>
     </section>
@@ -463,9 +517,9 @@ Running ads is only one part of the picture. We look at the entire journey from 
 
             <br>
             <br>
-            We respond within 24 hours. No spam. No obligations.
+
         </p>
-        <button class="custom-btn btn--red-bg"><span>Book a Strategy Call</span></button>
+        <button class="custom-btn btn--red-bg" data-bs-toggle="modal" data-bs-target="#exampleModal"  ><span>Book a Strategy Call</span></button>
     </div>
     <aside class="lut-form-container">
         <form action="https://formsubmit.co/sumesh.kumar@mediax.co.in" method="post" class="lut-form d-grid">
@@ -477,7 +531,7 @@ Running ads is only one part of the picture. We look at the entire journey from 
             <input type="hidden" name="_subject" value="Performance +">
             <input type="hidden" name="_cc" value="vanshika@mediax.co.in">
             <input type="hidden" name="_cc" value="sumesh.kumar@mediax.co.in">
-            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_captcha" value="true">
 
             <input type="phone" class="lut-form--phone" placeholder="Phone" name="Phone">
             <input type="email" class="lut-form--email" placeholder="Email" name="Email">
