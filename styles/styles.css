@@ -414,7 +414,7 @@
 }
 
 .hero-form :is(input, select){
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.1);
   padding-top: 12px;
   padding-bottom: 12px;
   border-radius: 30px;
@@ -910,13 +910,13 @@ select{
   grid-template-columns: repeat(1, minmax(250px, 400px));
   padding: 30px;
   gap: 20px;
-  background-color: var(--black-color);
+  background: linear-gradient(45deg, var(--font-dark-grey), var(--primary-color));
   border-radius: 20px;
 }
 
 
 .lut-form-container :is(input, select){
-  background-color: var(--white-color);
+  background-color:  rgba(211, 211, 211);
   padding-top: 12px;
   padding-bottom: 12px;
   border-radius: 30px;
@@ -1135,7 +1135,7 @@ select {
 
 .hero-form select:hover,
 select:focus {
-  color: var(--primary-color)!important;
+  color: var(--white-color)!important;
   background: transparent;
 }
 

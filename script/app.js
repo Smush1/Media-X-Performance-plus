@@ -32,9 +32,15 @@
 })();
 
 
+
+
+
+
+
+
+///// Counting starts on scroll
 const dataNumbers = document.querySelectorAll('.data-num');
 const dataSection = document.querySelector('.stats-cards-container');
-
 
 
 
@@ -85,6 +91,11 @@ const dataSectionObserver = new IntersectionObserver(dataSectionCallback, {
 })
 
 dataSectionObserver.observe(dataSection)
+
+
+
+
+
 
 
 //// Reveal on scroll
@@ -164,8 +175,6 @@ const animPara= document.querySelector('.anim__para')
     opacity: 0.2,// fade in from opacity: 0 and visibility: hidden
     stagger: 0.1 // 0.05 seconds between each
 });
-
-
 
 
 
