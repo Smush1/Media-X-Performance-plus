@@ -1267,6 +1267,7 @@ option::checkmark {
 .liquidGlass-text {
   z-index: 3;
   color: black;
+  border: inherit;
 }
 
 
