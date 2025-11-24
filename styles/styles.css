@@ -106,10 +106,22 @@
   z-index: 999;
 }
 
+.navbar-toggler{
+  padding:  5px 10px!important;
+}
+
 
 .navbar-expand-lg .navbar-collapse{
   justify-content: flex-end;
 }
+
+
+.navbar>.container-fluid{
+  padding: 0 1rem;
+}
+
+
+
 
 /* Custom Drawer Styles */
 .custom-drawer {
@@ -411,6 +423,12 @@
   border:1px solid var(--white-color);
 }
 
+
+select{
+  padding-inline: var(--form-field-padding)!important;
+}
+
+
 .custom-btn.submit-btn{
   background-color: var(--secondary-color);
   width: fit-content;
@@ -616,6 +634,14 @@
 /*   max-width: 300px; */
   height: 250px;
 }
+
+
+
+
+
+
+
+
 
 /* Animated Logo */
 
@@ -916,6 +942,7 @@
 
 .footer-desc{
   max-width: 400px;
+  margin-bottom: 35px;
 }
 
 
@@ -1021,6 +1048,9 @@
     width: 50px;
   }
   
+  .www-single-container p{
+  font-size: 14px;
+}
 
    .www-single-container hr{
     display: none;
@@ -1068,7 +1098,18 @@
 
 
 
+  .links__heading{
+    margin-bottom: 8px!important;
+  }
 
+
+  .contact-detail-container{
+    gap: 0;
+  }
+
+  .contact-detail-container p{
+    margin-bottom: 10px;
+  }
 
 }
 
