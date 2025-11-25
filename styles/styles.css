@@ -1216,7 +1216,7 @@ option:nth-of-type(odd) {
 
 option:hover,
 option:focus {
-/*   background: #7A7A7A30; */
+  background: #7A7A7A30;
 }
 option .icon {
   font-size: 1.6rem;
