@@ -59,6 +59,17 @@
 
 
 
+.cursor{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+
+
 
 
 .section{
@@ -668,8 +679,8 @@ select{
 }
 
 .www-anim__logo{
-  width: 150px;
-  height: auto;
+  width: auto;
+  height: 60px;
   flex-shrink: 0;
 }
 
@@ -681,7 +692,7 @@ select{
   }
 
   100%{
-    transform: translateX(-25%);
+    transform: translateX(-34%);
   }
 }
 
@@ -1026,6 +1037,27 @@ select{
     padding-bottom: 10px;
   }
 
+
+
+  @keyframes scroll {
+
+  0%{
+    transform: translateX(-200%);
+  }
+
+  100%{
+    transform: translateX(9%);
+  }
+}
+
+
+
+
+
+
+
+
+
   .www-cards-container{
     justify-content: center;
     padding-top: 20px;
@@ -1135,11 +1167,11 @@ select {
 
 .hero-form select:hover,
 select:focus {
-  color: var(--white-color)!important;
+  color: var(--primary-color)!important;
   background: transparent;
 }
 
-.lut-form-container select:hover,
+.lut-form-container > select:hover,
 select:focus{
   background-color: var(--white-color);
 }
@@ -1159,7 +1191,7 @@ option {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
-  border: 2px solid #dddddd;
+ /*  border: 2px solid #dddddd; */
   padding: 10px;
   transition: 0.4s;
 }
@@ -1184,7 +1216,7 @@ option:nth-of-type(odd) {
 
 option:hover,
 option:focus {
-  background: #16428d30;
+/*   background: #7A7A7A30; */
 }
 option .icon {
   font-size: 1.6rem;
