@@ -448,6 +448,7 @@
 .hero-form__para{
   line-height: 2.4rem;
   text-align: justify;
+  font-size: clamp(12px, 4vw, 18px);
 }
 
 select{
